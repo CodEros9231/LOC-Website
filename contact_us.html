@@ -7,16 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Split Ease - Contact Us</title>
     <!-- Add your CSS files here -->
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/boxicons/css/boxicons.min.css">
 </head>
 
 <body>
-    <!-- Add your header content here -->
     <header>
         <h1>Contact Us</h1>
-        <!-- Add navigation links if needed -->
+        <div class="social-links mt-3 text-center">
+            <a href="https://github.com/CodEros9231" class="github"><i class="bx bxl-github"></i></a>
+            <a href="https://twitter.com/ErosKuikel" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/eroskuikel/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="mailto:eros.kuikel@nyu.edu" class="email-link"><i class="bx bx-envelope"></i> Email</a>
+            <a href="tel:+971501923106" class="phone-link"><i class="bx bx-phone"></i> Phone</a>
+        </div>
     </header>
 
-    <!-- Add your contact form here -->
     <div class="container">
         <h2>Contact the Admins</h2>
         <form action="/send-message" method="POST">
@@ -32,7 +44,6 @@
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
 
-            <!-- Add calendar and calendly links for admins here -->
             <label for="admin">Contact Admin:</label>
             <select id="admin" name="admin">
                 <option value="Eros">Eros</option>
@@ -40,8 +51,6 @@
                 <option value="Moeez">Moeez</option>
             </select><br><br>
 
-            <!-- Add Calendly links for admins here -->
-            <!-- Replace the "#" with actual Calendly links -->
             <label for="calendly">Schedule Meeting:</label><br>
             <a href="https://calendly.com/eroskuikel/for-splitease">Schedule a meeting with Eros</a><br>
             <a href="https://calendly.com/eroskuikel/for-splitease">Schedule a meeting with Snehil</a><br>
@@ -51,12 +60,9 @@
         </form>
     </div>
 
-    <!-- Add your footer content here -->
     <footer>
         <p>&copy; 2024 Split Ease. All rights reserved.</p>
     </footer>
-
-    <!-- Add your JavaScript files here -->
 </body>
 
 </html>
