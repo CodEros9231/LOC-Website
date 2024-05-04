@@ -9,7 +9,7 @@ function drawLineChart() {
           {
             scaleLabel: {
               display: true,
-              labelString: "Hits"
+              labelString: "Amount of Cash (in USD)"
             }
           }
         ]
@@ -34,7 +34,7 @@ function drawLineChart() {
         ],
         datasets: [
           {
-            label: "Latest Hits",
+            label: "Outflow",
             data: [88, 68, 79, 57, 50, 55, 70],
             fill: false,
             borderColor: "rgb(75, 192, 192)",
@@ -42,21 +42,21 @@ function drawLineChart() {
             pointRadius: 0
           },
           {
-            label: "Popular Hits",
+            label: "Inflow",
             data: [33, 45, 37, 21, 55, 74, 69],
             fill: false,
             borderColor: "rgba(255,99,132,1)",
             cubicInterpolationMode: "monotone",
             pointRadius: 0
           },
-          {
-            label: "Featured",
-            data: [44, 19, 38, 46, 85, 66, 79],
-            fill: false,
-            borderColor: "rgba(153, 102, 255, 1)",
-            cubicInterpolationMode: "monotone",
-            pointRadius: 0
-          }
+          // {
+          //   label: "Featured",
+          //   data: [44, 19, 38, 46, 85, 66, 79],
+          //   fill: false,
+          //   borderColor: "rgba(153, 102, 255, 1)",
+          //   cubicInterpolationMode: "monotone",
+          //   pointRadius: 0
+          // }
         ]
       },
       options: optionsLine
@@ -81,7 +81,7 @@ function drawBarChart() {
             },
             scaleLabel: {
               display: true,
-              labelString: "Hits"
+              labelString: "Group Name"
             }
           }
         ]
@@ -105,10 +105,10 @@ function drawBarChart() {
     configBar = {
       type: "horizontalBar",
       data: {
-        labels: ["Red", "Aqua", "Green", "Yellow", "Purple", "Orange", "Blue"],
+        labels: ["Person 1", "Person 2", "Person 3", "Person 4", "Person 5", "Person 6", "Person 7"],
         datasets: [
           {
-            label: "# of Hits",
+            label: "Expense This Month (in USD)",
             data: [33, 40, 28, 49, 58, 38, 44],
             backgroundColor: [
               "#F7604D",
@@ -159,15 +159,14 @@ function drawPieChart() {
       data: {
         datasets: [
           {
-            data: [18.24, 6.5, 9.15],
+            data: [290, 130],
             backgroundColor: ["#F7604D", "#4ED6B8", "#A8D582"],
             label: "Storage"
           }
         ],
         labels: [
-          "Used Storage (18.240GB)",
-          "System Storage (6.500GB)",
-          "Available Storage (9.150GB)"
+          "Money Owed to You (290$)",
+          "Money You Owe to Others (130$)",
         ]
       },
       options: optionsPie
