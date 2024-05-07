@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -20,6 +20,14 @@
         -->
         <style>
             /* Additional styling for this page */
+            @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .split-ease-animation {
+            animation: fadeIn 4s ease;
+        }
             .tm-logo {
                 width: 200px; /* Adjust the width as needed */
                 height: auto; /* Maintain aspect ratio */
@@ -65,7 +73,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <!-- Big text in the middle -->
-                    <h1 class="tm-big-text">SPLIT<span style="color: #00263E;">EASE</span></h1>
+                    <!-- <h1 class="tm-big-text">SPLIT<span style="color: #00263E;">EASE</span></h1> -->
+                    <h1 class="tm-big-text">
+                        <span class="split-ease-animation">SPLIT</span>
+                        <span style="color: #00263E;" class="split-ease-animation">EASE</span>
+                    </h1>
                     <p class="text-center" style="color: #0026ffba; font-size: 1.5rem; margin-bottom: 30px;">Why should splitting be hard?</p>
 
                     <!-- Big logo image -->
