@@ -658,6 +658,10 @@ input[type="checkbox"]:focus {
   .tm-block-taller {
     max-height: 520px;
   }
+  .big-logo {
+    width: 3000px; /* Adjust the width as needed */
+}
+
 }
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
@@ -732,4 +736,7 @@ input[type="checkbox"]:focus {
     max-height: 350px;
   }
 }
+
+
+
 
